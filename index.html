@@ -12,7 +12,6 @@
             padding: 0;
             box-sizing: border-box;
         }
-
         :root {
             --primary: #d56233;
             --primary-dark: #b44d25;
@@ -22,28 +21,24 @@
             --gray: #6c757d;
             --light-gray: #e9ecef;
         }
-
         body {
             font-family: 'Open Sans', sans-serif;
             color: var(--dark);
             line-height: 1.6;
             background-color: #f5f7f9;
         }
-
         h1, h2, h3, h4, h5 {
             font-family: 'Poppins', sans-serif;
             font-weight: 600;
             margin-bottom: 1rem;
             color: var(--secondary);
         }
-
         .container {
             width: 100%;
             max-width: 1200px;
             margin: 0 auto;
             padding: 0 15px;
         }
-
         .btn {
             display: inline-block;
             padding: 10px 25px;
@@ -58,13 +53,11 @@
             text-decoration: none;
             text-align: center;
         }
-
         .btn:hover {
             background-color: var(--primary-dark);
             transform: translateY(-2px);
             box-shadow: 0 4px 8px rgba(0,0,0,0.1);
         }
-
         /* Header Styles */
         header {
             background-color: white;
@@ -73,44 +66,36 @@
             top: 0;
             z-index: 1000;
         }
-
         .header-container {
             display: flex;
             justify-content: space-between;
             align-items: center;
             padding: 15px 0;
         }
-
         .logo {
             display: flex;
             align-items: center;
         }
-
         .logo-icon {
             font-size: 28px;
             color: var(--primary);
             margin-right: 10px;
         }
-
         .logo h1 {
             font-size: 24px;
             margin-bottom: 0;
             color: var(--secondary);
         }
-
         .logo span {
             color: var(--primary);
         }
-
         nav ul {
             display: flex;
             list-style: none;
         }
-
         nav li {
             margin-left: 25px;
         }
-
         nav a {
             text-decoration: none;
             color: var(--dark);
@@ -119,11 +104,9 @@
             transition: color 0.3s;
             position: relative;
         }
-
         nav a:hover {
             color: var(--primary);
         }
-
         nav a::after {
             content: '';
             position: absolute;
@@ -134,11 +117,9 @@
             background-color: var(--primary);
             transition: width 0.3s;
         }
-
         nav a:hover::after {
             width: 100%;
         }
-
         .mobile-menu-btn {
             display: none;
             background: none;
@@ -147,7 +128,6 @@
             cursor: pointer;
             color: var(--secondary);
         }
-
         /* Hero Section */
         .hero {
             background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d?ixlib=rb-4.0.3&auto=format&fit=crop&w=1953&q=80');
@@ -158,30 +138,25 @@
             padding: 100px 20px;
             margin-bottom: 60px;
         }
-
         .hero h2 {
             font-size: 48px;
             color: white;
             margin-bottom: 20px;
         }
-
         .hero p {
             font-size: 20px;
             max-width: 800px;
             margin: 0 auto 30px;
         }
-
         /* Section Styling */
         section {
             padding: 60px 0;
         }
-
         .section-title {
             text-align: center;
             margin-bottom: 50px;
             position: relative;
         }
-
         .section-title::after {
             content: '';
             display: block;
@@ -191,18 +166,15 @@
             margin: 15px auto 0;
             border-radius: 2px;
         }
-
         /* About Section */
         .about-content {
             display: flex;
             align-items: center;
             gap: 40px;
         }
-
         .about-text {
             flex: 1;
         }
-
         .about-image {
             flex: 1;
             border-radius: 8px;
@@ -248,7 +220,6 @@
             grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
             gap: 30px;
         }
-
         .package-card {
             background-color: white;
             border-radius: 8px;
@@ -256,44 +227,36 @@
             box-shadow: 0 5px 15px rgba(0,0,0,0.08);
             transition: transform 0.3s ease, box-shadow 0.3s ease;
         }
-
         .package-card:hover {
             transform: translateY(-10px);
             box-shadow: 0 15px 30px rgba(0,0,0,0.15);
         }
-
         .package-header {
             background-color: var(--primary);
             color: white;
             padding: 20px;
             text-align: center;
         }
-
         .package-header i {
             font-size: 24px;
             margin-bottom: 10px;
         }
-
         .package-body {
             padding: 25px;
         }
-
         .package-features {
             list-style: none;
             margin: 20px 0;
         }
-
         .package-features li {
             padding: 8px 0;
             border-bottom: 1px dashed var(--light-gray);
             display: flex;
             justify-content: space-between;
         }
-
         .package-features li:last-child {
             border-bottom: none;
         }
-
         .package-price {
             font-size: 24px;
             font-weight: 700;
@@ -301,7 +264,6 @@
             text-align: center;
             margin: 20px 0;
         }
-
         /* Why Choose Us */
         .features {
             display: grid;
@@ -309,7 +271,6 @@
             gap: 30px;
             text-align: center;
         }
-
         .feature-box {
             padding: 30px 20px;
             background-color: white;
@@ -317,33 +278,27 @@
             box-shadow: 0 5px 15px rgba(0,0,0,0.05);
             transition: all 0.3s ease;
         }
-
         .feature-box:hover {
             transform: translateY(-5px);
             box-shadow: 0 10px 25px rgba(0,0,0,0.1);
         }
-
         .feature-icon {
             font-size: 40px;
             color: var(--primary);
             margin-bottom: 20px;
         }
-
         .feature-box h3 {
             margin-bottom: 15px;
         }
-
         /* Testimonials */
         .testimonials {
             background-color: var(--light);
             padding: 80px 0;
         }
-
         .testimonial-container {
             max-width: 800px;
             margin: 0 auto;
         }
-
         .testimonial {
             background-color: white;
             padding: 30px;
@@ -352,7 +307,6 @@
             margin-bottom: 30px;
             position: relative;
         }
-
         .testimonial::before {
             content: '"';
             position: absolute;
@@ -363,17 +317,14 @@
             opacity: 0.2;
             font-family: serif;
         }
-
         .testimonial-text {
             font-style: italic;
             margin-bottom: 20px;
         }
-
         .testimonial-author {
             display: flex;
             align-items: center;
         }
-
         .testimonial-author img {
             width: 50px;
             height: 50px;
@@ -381,20 +332,17 @@
             margin-right: 15px;
             object-fit: cover;
         }
-
         /* FAQ Section */
         .faq-container {
             max-width: 800px;
             margin: 0 auto;
         }
-
         .faq-item {
             margin-bottom: 20px;
             border-radius: 8px;
             overflow: hidden;
             box-shadow: 0 3px 10px rgba(0,0,0,0.08);
         }
-
         .faq-question {
             background-color: var(--primary);
             color: white;
@@ -405,11 +353,9 @@
             align-items: center;
             font-weight: 600;
         }
-
         .faq-question i {
             transition: transform 0.3s ease;
         }
-
         .faq-answer {
             background-color: white;
             padding: 0 20px;
@@ -417,61 +363,51 @@
             overflow: hidden;
             transition: max-height 0.3s ease, padding 0.3s ease;
         }
-
         .faq-item.active .faq-answer {
             padding: 20px;
             max-height: 500px;
         }
-
         .faq-item.active .faq-question i {
             transform: rotate(180deg);
         }
-
         /* Contact Section */
         .contact-container {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
             gap: 40px;
         }
-
         .contact-info {
             background-color: white;
             padding: 30px;
             border-radius: 8px;
             box-shadow: 0 5px 15px rgba(0,0,0,0.05);
         }
-
         .contact-info h3 {
             margin-bottom: 20px;
             color: var(--primary);
         }
-
         .contact-detail {
             display: flex;
             align-items: flex-start;
             margin-bottom: 25px;
         }
-
         .contact-icon {
             font-size: 20px;
             color: var(--primary);
             margin-right: 15px;
             min-width: 24px;
         }
-
         .map-container {
             height: 300px;
             border-radius: 8px;
             overflow: hidden;
             box-shadow: 0 5px 15px rgba(0,0,0,0.08);
         }
-
         .map-container iframe {
             width: 100%;
             height: 100%;
             border: none;
         }
-
         /* WhatsApp Button */
         .whatsapp-btn {
             position: fixed;
@@ -491,33 +427,28 @@
             transition: all 0.3s ease;
             text-decoration: none;
         }
-
         .whatsapp-btn:hover {
             transform: scale(1.1);
             box-shadow: 0 6px 15px rgba(0,0,0,0.3);
         }
-
         /* Footer */
         footer {
             background-color: var(--primary);
             color: white;
             padding: 60px 0 20px;
         }
-
         .footer-container {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
             gap: 40px;
             margin-bottom: 40px;
         }
-
         .footer-column h3 {
             color: white;
             margin-bottom: 25px;
             position: relative;
             padding-bottom: 10px;
         }
-
         .footer-column h3::after {
             content: '';
             position: absolute;
@@ -527,31 +458,25 @@
             height: 2px;
             background-color: white;
         }
-
         .footer-links {
             list-style: none;
         }
-
         .footer-links li {
             margin-bottom: 12px;
         }
-
         .footer-links a {
             color: rgba(255,255,255,0.8);
             text-decoration: none;
             transition: color 0.3s;
         }
-
         .footer-links a:hover {
             color: white;
         }
-
         .social-links {
             display: flex;
             gap: 15px;
             margin-top: 20px;
         }
-
         .social-links a {
             display: flex;
             align-items: center;
@@ -563,12 +488,10 @@
             color: white;
             transition: all 0.3s;
         }
-
         .social-links a:hover {
             background-color: rgba(255,255,255,0.2);
             transform: translateY(-3px);
         }
-
         .copyright {
             text-align: center;
             padding-top: 20px;
@@ -576,27 +499,22 @@
             font-size: 14px;
             color: rgba(255,255,255,0.7);
         }
-
         /* Responsive Styles */
         @media (max-width: 992px) {
             .hero h2 {
                 font-size: 36px;
             }
-            
             .hero p {
                 font-size: 18px;
             }
-            
             .about-content {
                 flex-direction: column;
             }
         }
-
         @media (max-width: 768px) {
             .mobile-menu-btn {
                 display: block;
             }
-            
             nav {
                 position: fixed;
                 top: 80px;
@@ -609,23 +527,18 @@
                 box-shadow: 5px 0 15px rgba(0,0,0,0.1);
                 z-index: 999;
             }
-            
             nav.active {
                 left: 0;
             }
-            
             nav ul {
                 flex-direction: column;
             }
-            
             nav li {
                 margin: 15px 0;
             }
-            
             .hero {
                 padding: 80px 20px;
             }
-            
             .hero h2 {
                 font-size: 32px;
             }
@@ -689,10 +602,193 @@
     </section>
 
     <!-- Packages Section -->
-    <!-- (keep your existing packages section, unchanged) -->
+    <section id="packages" style="background-color: var(--light);">
+        <div class="container">
+            <div class="section-title">
+                <h2>Health Checkup Packages</h2>
+                <p>Comprehensive health assessments for preventive care</p>
+            </div>
+            <div class="packages-container">
+                <!-- Package 1 -->
+                <div class="package-card">
+                    <div class="package-header">
+                        <i class="fas fa-heartbeat"></i>
+                        <h3>Complete Health Check</h3>
+                    </div>
+                    <div class="package-body">
+                        <p>A comprehensive health assessment covering all major body systems for complete peace of mind.</p>
+                        <ul class="package-features">
+                            <li>Parameters Covered <span>83</span></li>
+                            <li>Complete Blood Count</li>
+                            <li>Liver & Kidney Panel</li>
+                            <li>Lipid Profile</li>
+                            <li>Thyroid Profile</li>
+                            <li>Diabetes Screening</li>
+                            <li>Vitamin D & B12</li>
+                        </ul>
+                        <div class="package-price">₹ 4,800</div>
+                        <a href="#book" class="btn" style="width: 100%;">Book Now</a>
+                    </div>
+                </div>
+                <!-- Package 2 -->
+                <div class="package-card">
+                    <div class="package-header">
+                        <i class="fas fa-user-md"></i>
+                        <h3>Essential Wellness</h3>
+                    </div>
+                    <div class="package-body">
+                        <p>Key health parameters for routine monitoring and early detection of common health issues.</p>
+                        <ul class="package-features">
+                            <li>Parameters Covered <span>55</span></li>
+                            <li>Basic Lipid Profile</li>
+                            <li>Liver Function Tests</li>
+                            <li>Kidney Function Tests</li>
+                            <li>Diabetes Screening</li>
+                            <li>Complete Blood Count</li>
+                            <li>Urine Analysis</li>
+                        </ul>
+                        <div class="package-price">₹ 2,200</div>
+                        <a href="#book" class="btn" style="width: 100%;">Book Now</a>
+                    </div>
+                </div>
+                <!-- Package 3 -->
+                <div class="package-card">
+                    <div class="package-header">
+                        <i class="fas fa-lungs"></i>
+                        <h3>Liver & Kidney Panel</h3>
+                    </div>
+                    <div class="package-body">
+                        <p>Comprehensive evaluation of liver and kidney function with 23 critical parameters.</p>
+                        <ul class="package-features">
+                            <li>Parameters Covered <span>23</span></li>
+                            <li>Liver Enzymes (SGOT, SGPT)</li>
+                            <li>Bilirubin (Total & Direct)</li>
+                            <li>Albumin & Globulin</li>
+                            <li>Creatinine & Urea</li>
+                            <li>Uric Acid</li>
+                            <li>Electrolytes</li>
+                        </ul>
+                        <div class="package-price">₹ 1,400</div>
+                        <a href="#book" class="btn" style="width: 100%;">Book Now</a>
+                    </div>
+                </div>
+                <!-- Package 4 -->
+                <div class="package-card">
+                    <div class="package-header">
+                        <i class="fas fa-prescription-bottle-alt"></i>
+                        <h3>Diabetes Care</h3>
+                    </div>
+                    <div class="package-body">
+                        <p>Essential tests for diabetes screening and management.</p>
+                        <ul class="package-features">
+                            <li>Parameters Covered <span>6</span></li>
+                            <li>Glucose Fasting</li>
+                            <li>Glucose Post Prandial</li>
+                            <li>HbA1c (Glycosylated Hemoglobin)</li>
+                            <li>Urine Microalbumin</li>
+                            <li>Creatinine</li>
+                        </ul>
+                        <div class="package-price">₹ 900</div>
+                        <a href="#book" class="btn" style="width: 100%;">Book Now</a>
+                    </div>
+                </div>
+                <!-- Package 5 -->
+                <div class="package-card">
+                    <div class="package-header">
+                        <i class="fas fa-vial"></i>
+                        <h3>Vitamin Package</h3>
+                    </div>
+                    <div class="package-body">
+                        <p>Comprehensive vitamin assessment to identify deficiencies.</p>
+                        <ul class="package-features">
+                            <li>Parameters Covered <span>8</span></li>
+                            <li>Vitamin D (25-Hydroxy)</li>
+                            <li>Vitamin B12 (Cyanocobalamin)</li>
+                            <li>Vitamin B9 (Folate)</li>
+                            <li>Iron Studies</li>
+                            <li>Calcium</li>
+                        </ul>
+                        <div class="package-price">₹ 1,650</div>
+                        <a href="#book" class="btn" style="width: 100%;">Book Now</a>
+                    </div>
+                </div>
+                <!-- Package 6 -->
+                <div class="package-card">
+                    <div class="package-header">
+                        <i class="fas fa-heart"></i>
+                        <h3>Cardiac Care</h3>
+                    </div>
+                    <div class="package-body">
+                        <p>Comprehensive assessment for cardiovascular health.</p>
+                        <ul class="package-features">
+                            <li>Parameters Covered <span>18</span></li>
+                            <li>Lipid Profile (Complete)</li>
+                            <li>Hs-CRP</li>
+                            <li>Homocysteine</li>
+                            <li>Apolipoproteins</li>
+                            <li>Cardiac Enzymes</li>
+                        </ul>
+                        <div class="package-price">₹ 2,800</div>
+                        <a href="#book" class="btn" style="width: 100%;">Book Now</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
     <!-- Why Choose Us -->
-    <!-- (keep your why-us section, unchanged) -->
+    <section id="why-us">
+        <div class="container">
+            <div class="section-title">
+                <h2>Why Choose Rainbow Laboratories?</h2>
+                <p>Excellence in diagnostic services</p>
+            </div>
+            <div class="features">
+                <div class="feature-box">
+                    <div class="feature-icon">
+                        <i class="fas fa-award"></i>
+                    </div>
+                    <h3>Quality Accreditation</h3>
+                    <p>NABL accredited laboratory ensuring the highest standards in testing procedures and accuracy.</p>
+                </div>
+                <div class="feature-box">
+                    <div class="feature-icon">
+                        <i class="fas fa-microscope"></i>
+                    </div>
+                    <h3>Advanced Technology</h3>
+                    <p>State-of-the-art automated equipment and cutting-edge diagnostic technology for precise results.</p>
+                </div>
+                <div class="feature-box">
+                    <div class="feature-icon">
+                        <i class="fas fa-user-md"></i>
+                    </div>
+                    <h3>Expert Pathologists</h3>
+                    <p>Team of highly qualified and experienced pathologists providing accurate interpretations.</p>
+                </div>
+                <div class="feature-box">
+                    <div class="feature-icon">
+                        <i class="fas fa-truck"></i>
+                    </div>
+                    <h3>Free Home Collection</h3>
+                    <p>Convenient sample collection at your home with trained phlebotomists and proper safety protocols.</p>
+                </div>
+                <div class="feature-box">
+                    <div class="feature-icon">
+                        <i class="fas fa-bolt"></i>
+                    </div>
+                    <h3>Quick Turnaround</h3>
+                    <p>Most reports delivered within 24 hours through email, app, or directly from our center.</p>
+                </div>
+                <div class="feature-box">
+                    <div class="feature-icon">
+                        <i class="fas fa-rupee-sign"></i>
+                    </div>
+                    <h3>Affordable Pricing</h3>
+                    <p>High-quality diagnostic services at competitive prices with regular health package offers.</p>
+                </div>
+            </div>
+        </div>
+    </section>
 
     <!-- Testimonials -->
     <section id="testimonials" class="testimonials">
@@ -712,7 +808,6 @@
                         </div>
                     </div>
                 </div>
-                
                 <div class="testimonial">
                     <p class="testimonial-text">"I recently took the Complete Health Check package, and I must say I'm impressed with the thoroughness of the tests and the detailed report. The staff was courteous, and the doctor took time to explain my results. Truly a patient-first approach!"</p>
                     <div class="testimonial-author">
@@ -728,7 +823,66 @@
     </section>
 
     <!-- FAQ Section -->
-    <!-- (keep your FAQ section, unchanged) -->
+    <section id="faq">
+        <div class="container">
+            <div class="section-title">
+                <h2>Frequently Asked Questions</h2>
+                <p>Common questions about our services</p>
+            </div>
+            <div class="faq-container">
+                <!-- FAQ 1 -->
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span>What is the Complete Health Check package?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>The Complete Health Check package is our most comprehensive preventive health assessment that covers 83 parameters across all major body systems. It includes complete blood count, liver and kidney function tests, lipid profile, thyroid profile, diabetes screening, vitamin levels, and more. This package provides a complete picture of your health status and is recommended annually for adults.</p>
+                    </div>
+                </div>
+                <!-- FAQ 2 -->
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span>How should I prepare for my blood tests?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>For most blood tests, especially those requiring fasting (like glucose and lipid profile), you should fast for 8-12 hours before the test. You can drink water during this period. Avoid alcohol and strenuous exercise for 24 hours before the test. If you're taking medications, consult your doctor about whether to take them before the test. For specific test preparations, please contact our customer care.</p>
+                    </div>
+                </div>
+                <!-- FAQ 3 -->
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span>How long does it take to get test results?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Most routine test results are available within 24 hours. For specialized tests, it may take 48-72 hours. You will receive an SMS notification when your reports are ready. You can access your reports online through our patient portal, download them from our website, or collect physical copies from our center. For critical results, our team will contact you directly.</p>
+                    </div>
+                </div>
+                <!-- FAQ 4 -->
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span>Do you offer home sample collection?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Yes, we provide free home collection services across Panipat and nearby areas. Our trained phlebotomists follow strict safety protocols and use sterile equipment. To schedule a home collection, you can call us at +91-1802650142 or +91-8569920142, book online through our website, or message us on WhatsApp. Home collection is available from 6:00 AM to 8:00 PM, Monday to Saturday.</p>
+                    </div>
+                </div>
+                <!-- FAQ 5 -->
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span>Am I eligible for tax exemption on preventive health packages?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Yes, under Section 80D of the Income Tax Act, expenses incurred on preventive health check-ups for self, spouse, dependent children, or parents are eligible for tax deduction up to ₹5,000 per financial year. We provide the necessary receipts and documentation for tax exemption purposes with all our health packages.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
     <!-- Contact Section -->
     <section id="contact" style="background-color: var(--light);">
@@ -802,7 +956,6 @@
     </a>
 
     <!-- Footer -->
-    <!-- (keep your footer code, unchanged) -->
     <footer>
         <div class="container">
             <div class="footer-container">
@@ -862,11 +1015,9 @@
         // Mobile menu toggle
         const mobileMenuBtn = document.querySelector('.mobile-menu-btn');
         const nav = document.querySelector('nav');
-        
         mobileMenuBtn.addEventListener('click', () => {
             nav.classList.toggle('active');
         });
-        
         // Close mobile menu when clicking a link
         const navLinks = document.querySelectorAll('nav a');
         navLinks.forEach(link => {
@@ -874,26 +1025,20 @@
                 nav.classList.remove('active');
             });
         });
-        
         // FAQ accordion
         const faqItems = document.querySelectorAll('.faq-item');
-        
         faqItems.forEach(item => {
             const question = item.querySelector('.faq-question');
-            
             question.addEventListener('click', () => {
                 item.classList.toggle('active');
             });
         });
-        
         // Smooth scrolling for anchor links
         document.querySelectorAll('a[href^="#"]').forEach(anchor => {
             anchor.addEventListener('click', function(e) {
                 e.preventDefault();
-                
                 const targetId = this.getAttribute('href');
                 if(targetId === '#') return;
-                
                 const targetElement = document.querySelector(targetId);
                 if(targetElement) {
                     window.scrollTo({
