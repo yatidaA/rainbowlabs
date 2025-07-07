@@ -68,16 +68,15 @@
         }
         .header-container {
             display: flex;
-            flex-wrap: wrap;
             align-items: center;
             justify-content: space-between;
-            align-items: center;
             padding: 15px 0;
             min-height: 72px;
         }
         .logo {
             display: flex;
             align-items: center;
+            flex: 0 0 auto;
         }
         .logo-icon {
             font-size: 28px;
@@ -88,13 +87,22 @@
             font-size: 24px;
             margin-bottom: 0;
             color: var(--secondary);
+            white-space: nowrap;
         }
         .logo span {
             color: var(--primary);
         }
+        nav {
+            flex: 1 1 auto;
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+        }
         nav ul {
             display: flex;
             list-style: none;
+            align-items: center;
+            margin: 0;
         }
         nav li {
             margin-left: 25px;
@@ -106,6 +114,7 @@
             font-size: 16px;
             transition: color 0.3s;
             position: relative;
+            padding: 4px 0;
         }
         nav a:hover {
             color: var(--primary);
@@ -130,6 +139,48 @@
             font-size: 24px;
             cursor: pointer;
             color: var(--secondary);
+            margin-left: 20px;
+        }
+        @media (max-width: 992px) {
+            .header-container {
+                flex-direction: row;
+                align-items: center;
+            }
+        }
+        @media (max-width: 768px) {
+            .header-container {
+                flex-direction: row;
+                align-items: center;
+            }
+            .logo {
+                margin-bottom: 0;
+            }
+            .mobile-menu-btn {
+                display: block;
+            }
+            nav {
+                position: fixed;
+                top: 80px;
+                left: -100%;
+                width: 80%;
+                height: calc(100vh - 80px);
+                background-color: white;
+                padding: 30px;
+                transition: all 0.4s ease;
+                box-shadow: 5px 0 15px rgba(0,0,0,0.1);
+                z-index: 999;
+                display: block;
+            }
+            nav.active {
+                left: 0;
+            }
+            nav ul {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+            nav li {
+                margin: 15px 0 0 0;
+            }
         }
         /* Hero Section */
         .hero {
@@ -177,6 +228,9 @@
         }
         .about-text {
             flex: 1;
+        }
+        .about-text p {
+            margin-bottom: 24px;
         }
         .about-image {
             flex: 1;
@@ -229,6 +283,8 @@
             overflow: hidden;
             box-shadow: 0 5px 15px rgba(0,0,0,0.08);
             transition: transform 0.3s ease, box-shadow 0.3s ease;
+            display: flex;
+            flex-direction: column;
         }
         .package-card:hover {
             transform: translateY(-10px);
@@ -246,16 +302,27 @@
         }
         .package-body {
             padding: 25px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .package-body p {
+            text-align: center;
         }
         .package-features {
             list-style: none;
             margin: 20px 0;
+            padding: 0;
+            text-align: center;
+            width: 100%;
         }
         .package-features li {
             padding: 8px 0;
             border-bottom: 1px dashed var(--light-gray);
             display: flex;
-            justify-content: space-between;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
         }
         .package-features li:last-child {
             border-bottom: none;
@@ -502,50 +569,6 @@
             font-size: 14px;
             color: rgba(255,255,255,0.7);
         }
-        /* Responsive Styles */
-        @media (max-width: 992px) {
-            .hero h2 {
-                font-size: 36px;
-            }
-            .hero p {
-                font-size: 18px;
-            }
-            .about-content {
-                flex-direction: column;
-            }
-        }
-        @media (max-width: 768px) {
-            .mobile-menu-btn {
-                display: block;
-            }
-            nav {
-                position: fixed;
-                top: 80px;
-                left: -100%;
-                width: 80%;
-                height: calc(100vh - 80px);
-                background-color: white;
-                padding: 30px;
-                transition: all 0.4s ease;
-                box-shadow: 5px 0 15px rgba(0,0,0,0.1);
-                z-index: 999;
-            }
-            nav.active {
-                left: 0;
-            }
-            nav ul {
-                flex-direction: column;
-            }
-            nav li {
-                margin: 15px 0;
-            }
-            .hero {
-                padding: 80px 20px;
-            }
-            .hero h2 {
-                font-size: 32px;
-            }
-        }
     </style>
 </head>
 <body>
@@ -556,7 +579,7 @@
                 <div class="logo-icon"><i class="fas fa-flask"></i></div>
                 <h1>Rainbow <span>Laboratories</span></h1>
             </div>
-            <button class="mobile-menu-btn">
+            <button class="mobile-menu-btn" aria-label="Open Navigation Menu">
                 <i class="fas fa-bars"></i>
             </button>
             <nav>
@@ -929,7 +952,6 @@
                     </div>
                 </div>
                 <div class="map-container">
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3476.232720154486!2d76.9553364751829!3d29.392747449154065!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390ddbb697d88135%3A0xf6abc9c92c634964!2sRainbow%20Laboratory%20Services!5e0!3m2!1sen!2sin!4v1751873575213!5m2!1sen!2sin" allowfullscreen="" loading="lazy"></iframe>
                     <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3478.145711957535!2d76.96212361509586!3d29.3884242821424!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390ddba5d96f4b8d%3A0x1f6e0d7a199d0a9d!2sModel%20Town%2C%20Panipat%2C%20Haryana%20132103!5e0!3m2!1sen!2sin!4v1658142345678!5m2!1sen!2sin" allowfullscreen="" loading="lazy"></iframe>
                 </div>
             </div>
